@@ -81,7 +81,7 @@ coroutine.resume(coroutine.create(SCRIPT_LMSA85_FAKESCRIPT))
 function SCRIPT_SPUD86_FAKESCRIPT() -- Kill.LocalScript 
 	local script = Instance.new('LocalScript')
 	script.Parent = Kill
-	script.Parent.MouseButton1Down:connect(function()
+	script.Parent.MouseButton1Click:connect(function()
 		local name = script.Parent.Parent.Player
 		local victim
 		for i,v in pairs(game.Players:GetPlayers()) do
